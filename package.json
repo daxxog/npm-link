@@ -1,0 +1,30 @@
+{
+    "name"        : "npm-link",
+    "description" : "Magically link local npm packages.",
+    "homepage"    : "https://github.com/daxxog/npm-link",
+    "main"        : "npm-link.min.js",
+    "version"     : "0.0.1",
+    "engines": { "node" : ">=0.7.0" },
+    "maintainers": [{
+        "name"  : "David Volm",
+        "email" : "david@volminator.com",
+        "web"   : "http://daxxog.com/"
+    }],
+    "repository": {
+        "type" : "git",
+        "url"  : "https://github.com/daxxog/npm-link.git"
+    },
+    "devDependencies": {
+        "bitfactory": "*",
+        "stoptime": "*",
+        "uglify-js": "*"
+    },
+    "scripts": {
+        "preinstall": "./preinstall.sh",
+        "prepublish": "./prepublish.sh",
+        "postpublish": "./postpublish.sh"
+    },
+    "bin": {
+        "npm-link" : "./bin/npm-link"
+    }
+}
