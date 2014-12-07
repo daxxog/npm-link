@@ -1,2 +1,2 @@
 #!/usr/bin/env node
-(function(link,app){app.use(link);app.listen(7778);console.log('http://localhost:7778/archive.tar');}(require('../npm-link.js'),new require('express')()));
+(function(link,app){app.use(link);app.listen(7778);console.log('http://localhost:7778/archive.tar');}(require('../npm-link.min.js'),new require('express')()));
