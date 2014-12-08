@@ -3,7 +3,7 @@
     "description" : "Magically link local npm packages.",
     "homepage"    : "https://github.com/daxxog/npm-link",
     "main"        : "npm-link.min.js",
-    "version"     : "0.0.3",
+    "version"     : "0.0.4",
     "engines": { "node" : ">=0.7.0" },
     "maintainers": [{
         "name"  : "David Volm",
@@ -17,7 +17,10 @@
     "devDependencies": {
         "bitfactory": "*",
         "stoptime": "*",
-        "uglify-js": "*"
+        "uglify-js": "*",
+        "request": "*",
+        "vows": "*",
+        "tmp": "*"
     },
     "dependencies":  {
         "express": "*",
