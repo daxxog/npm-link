@@ -5,7 +5,9 @@ var tar = require('tar'),
     assert = require('assert');
 
 var extract = function(path, cb) {
-    var extractor = tar.Extract({path: path})
+    var extractor = tar.Extract({
+        path: path
+    })
         .on('error', cb)
         .on('end', cb);
 
